@@ -1,0 +1,57 @@
+--------------------------------------------
+Template License 
+--------------------------------------------
+
+Template Name : Snap Studio
+Author : MarkUps
+Author URL : http://www.markups.io/
+License URL : http://www.markups.io/license   
+Note : Before using we recommend check our template license page.
+
+--------------------------------------------
+Resources License and Credits : 
+--------------------------------------------
+
+Images:
+	Website URL : https://pixabay.com/
+	License : Creative Commons CC0
+	License URL : https://creativecommons.org/publicdomain/zero/1.0/deed.en
+	Note: All the images used in this item owned by the respective authors & you might need permission for using those on live sites from authors.
+
+Photographer Image:
+	Website URL : https://www.flickr.com/photos/anieto2k/6426843621/
+	License : CC BY-SA 2.0
+	License URL : https://creativecommons.org/licenses/by-sa/2.0/	
+
+
+Bootstrap :
+	Website URL : http://getbootstrap.com/
+	License : The MIT License
+	License URL : https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+Portfolio slider:
+	Website URL : http://tympanus.net/codrops/2015/05/06/photography-website-concept/
+	License : Free
+	License URL : http://tympanus.net/codrops/licensing/
+
+Tosrus :
+	Website URL : http://tosrus.frebsite.nl/
+	License : The MIT License
+	License URL : https://github.com/BeSite/jQuery.TosRUs/blob/master/LICENSE.txt
+
+Font Awesome :
+	Website URL : http://fortawesome.github.io/Font-Awesome/
+	License : open source 
+	License URL : http://fortawesome.github.io/Font-Awesome/license/
+
+
+Google Fonts : 
+	Merriweather Font:
+	Website URL : https://www.google.com/fonts/specimen/Merriweather
+	License : SIL Open Font License, version 1.1
+	License URL : http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+	Vollkorn Font:
+	Website URL : https://www.google.com/fonts/specimen/Vollkorn
+	License : SIL Open Font License, version 1.1
+	License URL : http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL

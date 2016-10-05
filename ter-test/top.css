@@ -1,0 +1,1104 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.nav_main-sprite, #orange .areaNav .nav li.navTop, #orange .areaNav .nav li.navTop a:hover, #orange .areaNav .nav li.navAccessory, #orange .areaNav .nav li.navAccessory a:hover, #orange .areaNav .nav li.navFacebook, #orange .areaNav .nav li.navFacebook a:hover {
+  background-image: url('../images/nav_main.png?aa8b067a6b');
+  background-repeat: no-repeat;
+}
+
+.banner-sprite, .bannerList li.bannerTvcm a, .bannerList li.bannerTvcm a:hover, .bannerList li.bannerDriveYourWorld a, .bannerList li.bannerDriveYourWorld a:hover, .bannerList li.bannerTransmission a, .bannerList li.bannerTransmission a:hover, .bannerList li.bannerActontv a, .bannerList li.bannerActontv a:hover, .bannerList li.bannerApp a, .bannerList li.bannerApp a:hover, .bannerList li.bannerVoice a, .bannerList li.bannerVoice a:hover, .bannerList li.bannerStyleEdition a, .bannerList li.bannerStyleEdition a:hover {
+  background-image: url('../images/orange/banner.png?2419e85846');
+  background-repeat: no-repeat;
+}
+
+.nav-sprite, #orange .areaNav .nav li.navOrangeTop, #orange .areaNav .nav li.navOrangeTop.is-current, #orange .areaNav .nav li.navOrangeTop a:hover, #orange .areaNav .nav li.navExterior, #orange .areaNav .nav li.navExterior.is-current, #orange .areaNav .nav li.navExterior a:hover, #orange .areaNav .nav li.navInterior, #orange .areaNav .nav li.navInterior.is-current, #orange .areaNav .nav li.navInterior a:hover {
+  background-image: url('../images/orange/nav.png?1f213bbf01');
+  background-repeat: no-repeat;
+}
+
+.page_change-sprite, #orange .contentWrapper .buttonToExterior a, #orange .contentWrapper .buttonToExterior a:hover, #orange .contentWrapper .buttonToInterior a, #orange .contentWrapper .buttonToInterior a:hover, #orange .contentWrapper .buttonToOrangeTop a, #orange .contentWrapper .buttonToOrangeTop a:hover {
+  background-image: url('../images/orange/page_change.png?380c1a5f60');
+  background-repeat: no-repeat;
+}
+
+.banner_title_page-sprite, #titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .bannerTvcm a, #titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .bannerTvcm a:hover {
+  background-image: url('../images/banner_title_page.png?4ab916c73a');
+  background-repeat: no-repeat;
+}
+
+.tvcm_button-sprite {
+  background-image: url('../images/tvcm_button.png?a1acfdcceb');
+  background-repeat: no-repeat;
+}
+
+.dot-sprite, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange:hover, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange.is-selected, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack:hover, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack.is-selected, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver:hover, #orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver.is-selected {
+  background-image: url('../images/orange/dot.png?4b7e52d657');
+  background-repeat: no-repeat;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "メイリオ", "Meiryo", verdana, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  line-height: 1;
+  background: #e1e2e6;
+  -webkit-text-size-adjust: 100%;
+}
+
+.is-floatingOpen {
+  overflow: hidden;
+}
+
+.floating {
+  display: none;
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url('../images/orange/floating_bg.png?df850de726');
+  z-index: 601;
+}
+.floating .floatingContents {
+  width: 980px;
+  height: 441px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin: -33px 0 0 -490px;
+}
+.floating .floatingContents .closeButton {
+  position: absolute;
+  right: 4px;
+  top: 0;
+  cursor: pointer;
+}
+.floating .floatingContents .floatContentArea {
+  width: 920px;
+  background: #fff;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.floating .floatingContents .floatContentArea .detailArea {
+  overflow: hidden;
+  padding: 40px 0 35px;
+}
+.floating .floatingContents .floatContentArea .detailArea .image {
+  border: 1px solid #ccc;
+  margin: 0 40px 0 41px;
+  float: left;
+}
+.floating .floatingContents .floatContentArea .detailArea .text {
+  float: left;
+  width: 400px;
+}
+.floating .floatingContents .floatContentArea .detailArea .text .title {
+  padding: 0 0 20px;
+}
+.floating .floatingContents .floatContentArea .detailArea .text .explanation {
+  line-height: 1.83;
+}
+
+#wrapper {
+  position: relative;
+  max-width: 1280px;
+  min-width: 980px;
+  width: auto;
+  margin: 0 auto;
+}
+#wrapper .loading {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+#wrapper .loading img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 -12px;
+}
+#wrapper .contentsArea {
+  visibility: hidden;
+}
+
+#orange {
+  position: relative;
+  min-width: 980px;
+  font-size: 12px;
+}
+#orange .bg {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  margin: -171px 0 0;
+}
+#orange .contentWrapper {
+  height: 684px;
+  overflow: hidden;
+  position: relative;
+}
+#orange .contentWrapper .buttonToExterior {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  z-index: 2;
+  width: 83px;
+  height: 44px;
+  margin: 0 0 0 -42px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+#orange .contentWrapper .buttonToExterior a {
+  display: block;
+  width: 83px;
+  height: 44px;
+  background-position: 0 0;
+}
+#orange .contentWrapper .buttonToExterior a:hover {
+  background-position: 0 -44px;
+}
+#orange .contentWrapper .buttonToExterior.is-current {
+  display: block;
+}
+#orange .contentWrapper .buttonToInterior {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  z-index: 2;
+  width: 79px;
+  height: 44px;
+  margin: 0 0 0 -40px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+#orange .contentWrapper .buttonToInterior a {
+  display: block;
+  width: 79px;
+  height: 44px;
+  background-position: 0 -88px;
+}
+#orange .contentWrapper .buttonToInterior a:hover {
+  background-position: 0 -132px;
+}
+#orange .contentWrapper .buttonToInterior.is-current {
+  display: block;
+}
+#orange .contentWrapper .buttonToOrangeTop {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 9px;
+  z-index: 2;
+  width: 171px;
+  height: 74px;
+  margin: 0 0 0 -88px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
+#orange .contentWrapper .buttonToOrangeTop a {
+  display: block;
+  width: 171px;
+  height: 74px;
+  background-position: 0 -176px;
+}
+#orange .contentWrapper .buttonToOrangeTop a:hover {
+  background-position: 0 -250px;
+}
+#orange .contentWrapper .buttonToOrangeTop.is-current {
+  display: block;
+}
+#orange .contentWrapper .areaOrange {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#orange .contentWrapper .areaOrange .orangeImagesTop {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#orange .contentWrapper .areaOrange .orangeImagesTop.is-current {
+  display: block;
+}
+#orange .contentWrapper .areaOrange .orangeImagesTop .orange1 {
+  position: absolute;
+  left: 60%;
+  top: 25%;
+  margin: 255px 0 0 -783px;
+}
+#orange .contentWrapper .areaOrange .orangeImagesTop .orange2 {
+  position: absolute;
+  left: 40%;
+  top: -174px;
+  margin: 0 0 0 -250px;
+}
+#orange .contentWrapper .areaOrange .orangeImagesTop .orange3 {
+  position: absolute;
+  right: 40%;
+  top: 25%;
+  margin: -120px -561px 0 0;
+}
+#orange .contentWrapper .areaOrange .orangeImagesExterior {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#orange .contentWrapper .areaOrange .orangeImagesExterior.is-current {
+  display: block;
+}
+#orange .contentWrapper .areaOrange .orangeImagesExterior .orange1 {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  margin: 140px 0 0 -426px;
+}
+#orange .contentWrapper .areaOrange .orangeImagesExterior .orange2 {
+  position: absolute;
+  right: 50%;
+  top: 80%;
+  margin: 13px -625px 0;
+}
+#orange .contentWrapper .areaOrange .orangeImagesExterior .orange3 {
+  position: absolute;
+  right: 40%;
+  top: -127px;
+  margin: 0 -584px 0 0;
+}
+#orange .contentWrapper .areaOrange .orangeImagesInterior {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#orange .contentWrapper .areaOrange .orangeImagesInterior.is-current {
+  display: block;
+}
+#orange .contentWrapper .areaOrange .orangeImagesInterior .orange1 {
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  margin: 2px 0 0 -509px;
+}
+#orange .contentWrapper .areaOrange .orangeImagesInterior .orange2 {
+  position: absolute;
+  right: 40%;
+  top: 10%;
+  margin: 544px -149px 0 0;
+}
+#orange .contentWrapper .areaOrange .orangeImagesInterior .orange3 {
+  position: absolute;
+  right: 40%;
+  top: -64px;
+  margin: 0 -586px 0 0;
+}
+#orange .contentWrapper .sceneContainer {
+  height: 100%;
+}
+#orange .contentWrapper .sceneTop {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#orange .contentWrapper .sceneTop .areaInner {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#orange .contentWrapper .sceneTop .areaInner .imageTitle {
+  position: absolute;
+  left: -4px;
+  top: 25%;
+  margin: -30px 0 0;
+}
+#orange .contentWrapper .sceneTop .areaInner .imageCar {
+  position: absolute;
+  right: -1px;
+  bottom: 60%;
+  margin: 0 0 -284px;
+}
+#orange .contentWrapper .sceneTop .bannerList {
+  position: absolute;
+  right: 6%;
+  bottom: 33%;
+  width: 584px;
+  margin: 0 -57px -182px 0;
+}
+#orange .contentWrapper .sceneExterior {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#orange .contentWrapper .sceneExterior .areaInner .imageTitle {
+  position: absolute;
+  left: 33px;
+  top: 105px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carDetailWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin: -342px 0 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer {
+  width: 980px;
+  height: 100%;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .carContainerInner {
+  height: 100%;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .carColorVariation {
+  position: absolute;
+  left: 147px;
+  top: 161px;
+  width: 693px;
+  height: 384px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointerList {
+  position: absolute;
+  left: 147px;
+  top: 161px;
+  width: 693px;
+  height: 384px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .car {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer .circle {
+  width: 34px;
+  height: 34px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 21px;
+  top: 21px;
+  background-image: url('../images/sp.png?afc0924531');
+  cursor: pointer;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer1 {
+  position: absolute;
+  left: 307px;
+  top: 204px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer1 .blow {
+  position: absolute;
+  left: -212px;
+  top: 37px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer2 {
+  position: absolute;
+  left: 409px;
+  top: 83px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer2 .blow {
+  position: absolute;
+  left: -190px;
+  top: -78px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer3 {
+  position: absolute;
+  left: 531px;
+  top: 41px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .carContainer .pointer3 .blow {
+  position: absolute;
+  left: 38px;
+  top: -73px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer {
+  width: 980px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  margin: -68px 0 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .dotContainerInner {
+  height: 100%;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot {
+  position: absolute;
+  left: 50%;
+  top: 574px;
+  margin: 0 0 0 -67px;
+  width: 135px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li {
+  float: left;
+  margin: 0 12px;
+  position: relative;
+  cursor: pointer;
+  width: 21px;
+  height: 21px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange {
+  background-position: 0 -42px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange:hover {
+  background-position: 0 -63px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotOrange.is-selected {
+  background-position: 0 -42px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack {
+  background-position: 0 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack:hover {
+  background-position: 0 -21px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotBlack.is-selected {
+  background-position: 0 0;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver {
+  background-position: 0 -84px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver:hover {
+  background-position: 0 -105px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.dotSilver.is-selected {
+  background-position: 0 -84px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li .frame {
+  position: absolute;
+  left: -7px;
+  top: -7px;
+  display: none;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.is-selected {
+  cursor: default;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorDot li.is-selected .frame {
+  display: block;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorName {
+  width: 980px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 608px;
+  margin: 0 0 0 -490px;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorName li {
+  display: none;
+  font-weight: bold;
+}
+#orange .contentWrapper .sceneExterior .areaInner .dotContainer .colorName li.is-selected {
+  display: block;
+}
+#orange .contentWrapper .sceneInterior {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#orange .contentWrapper .sceneInterior .areaInner {
+  width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#orange .contentWrapper .sceneInterior .areaInner .imageTitle {
+  position: absolute;
+  left: 33px;
+  top: 105px;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer {
+  position: absolute;
+  left: 35px;
+  top: 10%;
+  margin: 127px 0 0;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer .pointer .circle {
+  width: 34px;
+  height: 34px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  left: 21px;
+  top: 21px;
+  background-image: url('../images/sp.png?afc0924531');
+  cursor: pointer;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer .pointer1 {
+  position: absolute;
+  left: 100px;
+  top: 161px;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer .pointer1 .blow {
+  position: absolute;
+  left: 38px;
+  top: -73px;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer .pointer2 {
+  position: absolute;
+  left: 619px;
+  top: 182px;
+}
+#orange .contentWrapper .sceneInterior .areaInner .carContainer .pointer2 .blow {
+  position: absolute;
+  left: 38px;
+  top: -90px;
+}
+#orange .areaNav {
+  background: #fff;
+  height: 57px;
+  position: relative;
+}
+#orange .areaNav .nav li {
+  float: left;
+  margin: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+#orange .areaNav .nav li.navTop {
+  width: 112px;
+  height: 57px;
+  background-position: 0 -684px;
+}
+#orange .areaNav .nav li.navTop a {
+  display: block;
+  width: 112px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navTop a:hover {
+  background-position: 0 -741px;
+}
+#orange .areaNav .nav li.navOrangeTop {
+  width: 302px;
+  height: 57px;
+  background-position: 0 -228px;
+}
+#orange .areaNav .nav li.navOrangeTop.is-current {
+  background-position: 0 -285px;
+}
+#orange .areaNav .nav li.navOrangeTop.is-current a {
+  cursor: default;
+}
+#orange .areaNav .nav li.navOrangeTop a {
+  display: block;
+  width: 302px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navOrangeTop a:hover {
+  background-position: 0 -285px;
+}
+#orange .areaNav .nav li.navExterior {
+  width: 119px;
+  height: 57px;
+  background-position: 0 0;
+}
+#orange .areaNav .nav li.navExterior.is-current {
+  background-position: 0 -57px;
+}
+#orange .areaNav .nav li.navExterior.is-current a {
+  cursor: default;
+}
+#orange .areaNav .nav li.navExterior a {
+  display: block;
+  width: 119px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navExterior a:hover {
+  background-position: 0 -57px;
+}
+#orange .areaNav .nav li.navInterior {
+  width: 113px;
+  height: 57px;
+  background-position: 0 -114px;
+}
+#orange .areaNav .nav li.navInterior.is-current {
+  background-position: 0 -171px;
+}
+#orange .areaNav .nav li.navInterior.is-current a {
+  cursor: default;
+}
+#orange .areaNav .nav li.navInterior a {
+  display: block;
+  width: 113px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navInterior a:hover {
+  background-position: 0 -171px;
+}
+#orange .areaNav .nav li.navAccessory {
+  width: 117px;
+  height: 57px;
+  position: absolute;
+  right: 121px;
+  top: 0;
+  background-position: 0 0;
+  float: none;
+}
+#orange .areaNav .nav li.navAccessory a {
+  display: block;
+  width: 117px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navAccessory a:hover {
+  background-position: 0 -57px;
+}
+#orange .areaNav .nav li.navFacebook {
+  width: 121px;
+  height: 57px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-position: 0 -342px;
+  float: none;
+}
+#orange .areaNav .nav li.navFacebook a {
+  display: block;
+  width: 121px;
+  height: 57px;
+}
+#orange .areaNav .nav li.navFacebook a:hover {
+  background-position: 0 -399px;
+}
+#orange #footer {
+  position: relative;
+  color: #8a8a8a;
+  font-size: 10px;
+  list-style: none;
+  background: #e1e2e6;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+}
+#orange #footer .footerLeft {
+  float: left;
+  margin-top: 2px;
+}
+#orange #footer .footerLeft ul li {
+  display: inline;
+}
+#orange #footer .footerLeft ul li a {
+  color: #8a8a8a;
+  text-decoration: none;
+  background: url("../images/cmn_icon_footerlink.png") left center no-repeat;
+  padding: 0 10px;
+  display: inline;
+}
+#orange #footer .footerRight {
+  float: right;
+  margin-top: 6px;
+}
+#orange #footer .footerRight ul li {
+  display: inline;
+}
+#orange #footer .footerRight ul li a {
+  color: #8a8a8a;
+  text-decoration: none;
+  background: url("../images/cmn_icon_footerlink.png") left center no-repeat;
+  padding: 0 10px;
+  display: inline-block;
+  margin: 1px 0 0;
+}
+#orange #footer .footerRight ul li .copyright {
+  vertical-align: top;
+}
+#orange #footer .footerAttention {
+  clear: both;
+  text-align: right;
+  padding-top: 3px;
+}
+
+#titlePage {
+  position: relative;
+  min-width: 980px;
+  background: #fff;
+  font-size: 12px;
+}
+#titlePage .contentWrapper {
+  height: 741px;
+  overflow: hidden;
+  position: relative;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage {
+  width: 100%;
+  height: 671px;
+  position: relative;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .mainImageList {
+  height: 100%;
+  position: relative;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .mainImageList li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .mainImageList li .image {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -640px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav {
+  background: url('../images/nav_top_bg.png?ccaf06f633');
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .bannerTvcm {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-indent: -9999px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .bannerTvcm a {
+  background-position: 0 -200px;
+  display: block;
+  width: 115px;
+  height: 112px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .bannerTvcm a:hover {
+  background-position: 0 -312px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav {
+  width: 770px;
+  height: 90px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -385px;
+  font-size: 0;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul {
+  clear: both;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul li {
+  float: left;
+  margin: 0;
+  text-indent: -9999px;
+  position: relative;
+  width: 143px;
+  height: 90px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul li.w153 {
+  width: 153px;
+  height: 90px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul li.w142 {
+  width: 142px;
+  height: 90px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.out li img {
+  display: block;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.over {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.over li {
+  visibility: hidden;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.over li.is-current {
+  visibility: visible;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.over li img {
+  display: block;
+  position: absolute;
+  left: -12px;
+  bottom: 0;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.buttons {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.buttons li {
+  background: url('../images/sp.png?afc0924531');
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.buttons li a {
+  display: block;
+  width: 143px;
+  height: 90px;
+  background: url('../images/sp.png?afc0924531');
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.buttons li.left a {
+  width: 153px;
+  height: 90px;
+}
+#titlePage .contentWrapper .pageSwitcherContainer .areaMainImage .areaNav .nav ul.buttons li.right {
+  width: 142px;
+  height: 90px;
+}
+#titlePage .contentWrapper .areaBanner {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  background: #fff;
+}
+#titlePage .contentWrapper .areaBanner .bannerList {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 386px;
+}
+#titlePage .contentWrapper .openingContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+}
+#titlePage .contentWrapper .openingContainer .openingImage {
+  height: 100%;
+  position: relative;
+}
+#titlePage .contentWrapper .openingContainer .openingImage .kubota {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#titlePage .contentWrapper .openingContainer .openingImage .car {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  overflow: hidden;
+}
+#titlePage .contentWrapper .openingContainer .openingImage .car img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -320px;
+}
+#titlePage .contentWrapper .openingContainer .skipButton {
+  position: absolute;
+  right: 21px;
+  bottom: 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+#titlePage #footer {
+  position: relative;
+  color: #8a8a8a;
+  font-size: 10px;
+  list-style: none;
+  background: #e1e2e6;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+}
+#titlePage #footer .footerLeft {
+  float: left;
+  margin-top: 2px;
+}
+#titlePage #footer .footerLeft ul li {
+  display: inline;
+}
+#titlePage #footer .footerLeft ul li a {
+  color: #8a8a8a;
+  text-decoration: none;
+  background: url("../images/cmn_icon_footerlink.png") left center no-repeat;
+  padding: 0 10px;
+  display: inline;
+}
+#titlePage #footer .footerRight {
+  float: right;
+  margin-top: 6px;
+}
+#titlePage #footer .footerRight ul li {
+  display: inline;
+}
+#titlePage #footer .footerRight ul li a {
+  color: #8a8a8a;
+  text-decoration: none;
+  background: url("../images/cmn_icon_footerlink.png") left center no-repeat;
+  padding: 0 10px;
+  display: inline-block;
+  margin: 1px 0 0;
+}
+#titlePage #footer .footerRight ul li .copyright {
+  vertical-align: top;
+}
+#titlePage #footer .footerAttention {
+  clear: both;
+  text-align: right;
+  padding-top: 3px;
+}
+
+h1.logo {
+  position: absolute;
+  left: 17px;
+  top: 0;
+  z-index: 10;
+  text-indent: -9999px;
+}
+h1.logo a {
+  display: block;
+  background: url('../images/cmn_vw_logo.png?05341afdfe') no-repeat;
+  width: 125px;
+  height: 101px;
+}
+
+.bannerList ul {
+  overflow: hidden;
+  *zoom: 1;
+}
+.bannerList li {
+  float: left;
+  margin: 0 10px 0 0;
+  text-indent: -9999px;
+  width: 188px;
+  height: 50px;
+}
+.bannerList li a {
+  display: block;
+  width: 188px;
+  height: 50px;
+}
+.bannerList li.bannerTvcm a {
+  background-position: 0 0;
+}
+.bannerList li.bannerTvcm a:hover {
+  background-position: 0 -50px;
+}
+.bannerList li.bannerDriveYourWorld a {
+  background-position: 0 -100px;
+}
+.bannerList li.bannerDriveYourWorld a:hover {
+  background-position: 0 -150px;
+}
+.bannerList li.bannerTransmission a {
+  background-position: 0 -700px;
+}
+.bannerList li.bannerTransmission a:hover {
+  background-position: 0 -750px;
+}
+.bannerList li.bannerActontv a {
+  background-position: 0 -800px;
+}
+.bannerList li.bannerActontv a:hover {
+  background-position: 0 -850px;
+}
+.bannerList li.bannerApp {
+  margin: 0;
+}
+.bannerList li.bannerApp a {
+  background-position: 0 -200px;
+}
+.bannerList li.bannerApp a:hover {
+  background-position: 0 -250px;
+}
+.bannerList li.bannerVoice {
+  margin: 0;
+}
+.bannerList li.bannerVoice a {
+  background-position: 0 -300px;
+}
+.bannerList li.bannerVoice a:hover {
+  background-position: 0 -350px;
+}
+.bannerList li.bannerVoice.topPage {
+  margin: 0 10px 0 0;
+}
+.bannerList li.bannerStyleEdition a {
+  background-position: 0 -400px;
+}
+.bannerList li.bannerStyleEdition a:hover {
+  background-position: 0 -450px;
+}
+
+#ggl_remarke {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 1px;
+  left: 1px;
+}
