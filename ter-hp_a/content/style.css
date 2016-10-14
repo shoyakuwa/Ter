@@ -29,6 +29,11 @@ Tags: light, white,blog,business,multipurpose,one page, single page, custom-colo
 #BLOG PAGE
 #ERROR PAGE
 */
+.list li{
+  list-style-type: disc;
+  padding-bottom: 10px;
+}
+
 .pri h1{
   font-size: 20px;
   color: #00d999;
@@ -192,14 +197,12 @@ display: none;
 z-index: 9999;
 }
 
-.modal-content img{
-  margin-right:0.01%;
-}
+
 
 .modal-content p{
 
 	color: black;
-  width: 85%;
+  width: 90%;
   padding-left: 100px;
 }
 
@@ -397,6 +400,11 @@ table.brwsr1 td.r5 {
 .smnav{
   display: none;
 }
+
+.smbr{
+  display: none;
+}
+
 div#footerArea{
   display: none;
 }
@@ -448,7 +456,7 @@ margin-top: -90px;
     position: absolute;
     height: 75%;
     margin-top: 80px;
-    border-left: 3px solid #ffffff;
+    border-left: 3px solid rgb(154, 154, 154);
     left: 5%;
 }
 #process { padding: 60px 0 20px 0 }
@@ -576,7 +584,7 @@ ul.metas li a { color: #e5b112 }
 }
 .features-content {
    padding: 0 30px 0;
-   
+
 }
 .features-content h4 {
     text-transform: uppercase;
@@ -961,10 +969,10 @@ body,html{
 @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
 
 body {
-  font-family:"Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+  font-family:"Roboto Slab" , Garamond , "Times New Roman" , ""游明朝"" , "Yu Mincho" , ""游明朝体"" , "YuMincho" , ""ヒラギノ明朝 Pro W3"" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , ""HGS明朝E"" , ""ＭＳ Ｐ明朝"" , "MS PMincho" , serif;
 	font-size: 16px;
 	overflow-x: hidden !important;
-	color: #838282;
+	color: #656565;
 }
 ul{
 	padding: 0;
@@ -980,7 +988,7 @@ a:focus{
 	text-decoration: none;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: "Roboto Slab" , Garamond , "Times New Roman" , "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+	font-family:"Roboto Slab" , Garamond , "Times New Roman" , ""游明朝"" , "Yu Mincho" , ""游明朝体"" , "YuMincho" , ""ヒラギノ明朝 Pro W3"" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , ""HGS明朝E"" , ""ＭＳ Ｐ明朝"" , "MS PMincho" , serif;
 }
 h2 {
 	color: #fff;
@@ -1382,7 +1390,9 @@ img{
 	position: relative;
 	text-align: center;
 	width: 100%;
+  margin-left: -50px;
 }
+
 
 .tittle {
 	color: #3a3a3a;
@@ -3560,6 +3570,69 @@ pointer-events:none;
 .button1{
   margin-left: -20px;
 }
+.vline{
+  display: none;
+}
+
+
+
+.icon{
+  position: absolute;
+  bottom: -700px;
+}
+
+.icon2{
+  position: absolute;
+  bottom: -500px;
+}
+.icon3{
+  position: absolute;
+  bottom: -300px;
+}
+
+.icon4{
+  position: absolute;
+  bottom: -400px;
+}
+.icon5{
+  position: absolute;
+  bottom: -400px;
+}
+.icon6{
+  position: absolute;
+  bottom: -1500px;
+}
+.icon7{
+  position: absolute;
+  bottom: -1400px;
+}
+.icon8{
+padding-top: 100px;
+  margin-bottom: -150px;
+}
+
+.sum{
+padding: 0 20px 0 20px;
+}
+
+.title-area{
+  margin-top: -90px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+
+.list li{
+  list-style-type: disc;
+  padding-bottom: 10px;
+}
+
+.media{
+  margin-left: 10px;
+}
+
+.media-right.media-middle{
+  display: none;
+}
 
 .button2{
   margin-left: 0px;
@@ -3931,7 +4004,7 @@ overflow: hidden;
 	  font-size: 20px;
 	  padding-bottom: 5px;
 	}
-	.title-area p{
+	.title-area li{
 		font-size: 14px;
 	}
 	.search-area input[type="text"] {

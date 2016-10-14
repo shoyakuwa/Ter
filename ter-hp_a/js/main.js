@@ -78,7 +78,7 @@
 
 			// expand/close the stack
 			titleEl.addEventListener('click', function(ev) {
-				
+
 				if( classie.has(stack, 'is-selected') ) { // current stack
 					if( classie.has(bodyEl, 'view-full') ) { // stack is opened
 						var closeStack = function() {

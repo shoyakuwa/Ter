@@ -20,7 +20,22 @@ Tags: light, white, multipurpose, multi page, custom-colors, Bootstrap,responsiv
 #CONTACT PAGE
 
 */
+.hvr-icon-back{
+  z-index: 9999;
+  position: absolute;
+  top: 110px;
+  right: 36px;
+  color: white;
 
+}
+.hvr-icon-forward{
+  color: white;
+  z-index: 9999;
+  position: absolute;
+  top: 110px;
+  left: 220px;
+
+}
 
 
 /* Icon Wobble Horizontal */
@@ -287,17 +302,6 @@ ul {
   list-style: none;
 }
 
-.link{
-opacity: 0;
-  font-size: 40px;
-z-index: 999999;
-  position: relative;
-  top: 170px;
-  left: 474px;
-  width: 328px;
-  height: 50px;
-  background-color: black;
-}
 
 a {
   text-decoration: none;
@@ -990,12 +994,7 @@ margin-top: 5px;
   transform: rotate3d(0, 0, 1, -90deg);
 }
 
-.stack.stack-prev .stack-title1::after {
-  width: 100%;
-  left: 160px;
-  -webkit-transform: rotate3d(0, 0, 1, -90deg);
-  transform: rotate3d(0, 0, 1, -90deg);
-}
+
 
 
 .stack.stack-next .stack-title::after {
@@ -1005,16 +1004,9 @@ margin-top: 5px;
   transform: rotate3d(0, 0, 1, 90deg);
 }
 
-.stack.stack-next .stack-title1::after {
-  right: 160px;
-  width: 100%;
-  -webkit-transform: rotate3d(0, 0, 1, 90deg);
-  transform: rotate3d(0, 0, 1, 90deg);
-}
 
-.aaa{
-  a
-}
+
+
 
 .stack.stack-prev .stack-title:hover::after,
 .stack.stack-next .stack-title:hover::after {
@@ -1534,6 +1526,10 @@ display: inline;
 #header br{
   display: none;
 }
+.none{
+  display: none;
+
+}
 }
 
 
@@ -1544,17 +1540,30 @@ display: inline;
     right: 27px;
   }
 
-
-  .move-items .is-selected .item {
-    left: 17%;
+  .stack.stack-prev .stack-title::after {
+display: none;
   }
 
+
+
+
+  .stack.stack-next .stack-title::after {
+    display: none;
+  }
+
+  
+.hei img {
+  margin-top: -30px;
+}
 
   .item__details {
     left: -69%;
     width: 60%;
   }
+.stack-slider{
 
+  height: 600px;
+}
 
   .contact-area {
     margin-top: 50px;

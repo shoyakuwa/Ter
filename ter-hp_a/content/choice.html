@@ -54,24 +54,22 @@
 
   <header id="GHead">
   <div class="inner">
-    <nav class="smnav">
+      <p class="logo1"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
+      <p class="tel sm"><img src="assets/images/contact.png" width="266" height="36" alt="電話番号"></p>
+ <dl id="accordion">
+  <dt></dt>
+  <dd>
+    <li><a href="../index.html">トップ</a></li>
+    <li><a href="s-item.html">調査項目</a></li>
+    <li><a href="flow.html">調査の流れ</a></li>
+    <li><a href="price.html">調査料金</a></li>
+    <li><a href="choice.html">探偵選び方</a></li>
+    <li><a href="question.html">よくあるご質問</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+　</dd>
+</dl>
 
-   <a  onclick="open_menu()"><img src="assets/images/head_menubtn.png"></a>
-   <ul class="nav3" id="open" style="display:none">
-     <li><a href="flow.html">調査の流れ</a></li>
-     <li><a href="choice.html">探偵選び方</a></li>
-     <li><a href="#">よくあるご質問</a></li>
-     <li><a href="company.html">会社概要</a></li>
-   </ul>
-   <ul class="nav2">
-  <p class="logo1"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
-   <li><a href="../index.html">トップ</a></li>
-   <li><a href="s-item.html">調査項目</a></li>
-   <li><a href="price.html">調査料金</a></li>
-   <li><a href="contact">お問い合わせ</a></li>
-  </ul>
-  </nav>
-    <p class="logo"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
     <ul class="telBox">
 
       <li>
@@ -91,15 +89,15 @@
         <li><a href="flow.html">調査の流れ</a></li>
         <li><a href="price.html">調査料金</a></li>
         <li><a href="choice.html">探偵選び方</a></li>
-        <li><a href="#">よくあるご質問</a></li>
+        <li><a href="question.html">よくあるご質問</a></li>
         <li><a href="company.html">会社概要</a></li>
-        <li><a href="contact">お問い合わせ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
     <!-- / .inner -->
   </nav>
 
-  </header>
+</header>
 
 <section id="blog-banner">
   <img src="assets/images/blog-banner.jpg" alt="img">
@@ -308,7 +306,7 @@
 <h3 style="color:rgb(34, 35, 112);">★弊社が行っている事</h3>
                           <div class="col-md-7-1 col-sm-6 col-xs-12">
                             <div class="about-right wow fadeInRight">
-                              <div style="margin-left:-50px;" class="title-area">
+                              <div class="title-area">
                                 <p>
                                   ・HPには全て事実のみを掲載し「誇大広告」や「偽りの集客」を行わない。<br>
                                   ・お問い合わせ段階での具体的な提案と詳細な総額料金を提示する。　<br>
@@ -434,7 +432,7 @@
 <h3 style="color:rgb(34, 35, 112);">完全成功報酬制度（結果が出なければ０円）のケース</h3>
         <div class="col-md-7-1 col-sm-6 col-xs-12">
           <div class="about-right wow fadeInRight">
-            <div style="margin-left:-30px;" class="title-area">
+            <div class="title-area">
               <p>
               <span class="red">☑なにをもって成功とするのか？どのような結果が得られるのか？が明確にされている。</span>
 「浮気相手との密会現場」「ラブホテルへの出入り」「相手の自宅や勤務先の判明」など、「裁判で通用する証拠を収集する」と、詳細な条件が約束されているのか？浮気をしていなかったというのは結果でもなんでもありません。
@@ -797,6 +795,19 @@
 
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
-<script type="text/javascript" src="assets/js/btn.js"></script>
+  <script>
+      $(function(){
+          $("#accordion dt").on("click", function() {
+              $(this).next().slideToggle();
+              $(this).toggleClass("active");
+          });
+      $("#accordion dt").mouseover(function(){
+          $(this).addClass("over");
+      });
+      $("#accordion dt").mouseout(function(){
+          $(this).removeClass("over");
+      });
+      });
+  </script>
   </body>
 </html>

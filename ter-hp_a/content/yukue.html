@@ -54,24 +54,22 @@
 
   <header id="GHead">
   <div class="inner">
-    <nav class="smnav">
+      <p class="logo1"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
+      <p class="tel sm"><img src="assets/images/contact.png" width="266" height="36" alt="電話番号"></p>
+ <dl id="accordion">
+  <dt></dt>
+  <dd>
+    <li><a href="../index.html">トップ</a></li>
+    <li><a href="s-item.html">調査項目</a></li>
+    <li><a href="flow.html">調査の流れ</a></li>
+    <li><a href="price.html">調査料金</a></li>
+    <li><a href="choice.html">探偵選び方</a></li>
+    <li><a href="question.html">よくあるご質問</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="contact.html">お問い合わせ</a></li>
+　</dd>
+</dl>
 
-   <a  onclick="open_menu()"><img src="assets/images/head_menubtn.png"></a>
-   <ul class="nav3" id="open" style="display:none">
-     <li><a href="flow.html">調査の流れ</a></li>
-     <li><a href="choice.html">探偵選び方</a></li>
-     <li><a href="#">よくあるご質問</a></li>
-     <li><a href="company.html">会社概要</a></li>
-   </ul>
-   <ul class="nav2">
-  <p class="logo1"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
-   <li><a href="../index.html">トップ</a></li>
-   <li><a href="s-item.html">調査項目</a></li>
-   <li><a href="price.html">調査料金</a></li>
-   <li><a href="contact">お問い合わせ</a></li>
- </ul>
- </nav>
-    <p class="logo"><a href="/"><img src="assets/images/logo-01.png" width="366" height="88" alt="株式会社TeR"></a></p>
     <ul class="telBox">
 
       <li>
@@ -91,9 +89,9 @@
         <li><a href="flow.html">調査の流れ</a></li>
         <li><a href="price.html">調査料金</a></li>
         <li><a href="choice.html">探偵選び方</a></li>
-        <li><a href="#">よくあるご質問</a></li>
+        <li><a href="question.html">よくあるご質問</a></li>
         <li><a href="company.html">会社概要</a></li>
-        <li><a href="contact">お問い合わせ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
       </ul>
     </div>
     <!-- / .inner -->
@@ -143,15 +141,17 @@
                           <div class="col-md-7-1 col-sm-6 col-xs-12">
                             <div class="about-right wow fadeInRight">
                               <div class="title-area">
-                                <p>・夫（妻）・恋人が旅行に出かける。本当に友達と行くのか確認したい<br>
-・夫（妻）・恋人の出張先での行動を確認したい<br>
-・夫（妻）・恋人が同窓会に出かける。同窓会での様子・その後の行動を確認したい<br>
-・恋人が最近内緒でバイトを始めたようだ。何のバイトをしているか確認したい<br>
-・恋人がデートを突然キャンセルしてきた。何をするのか確認したい<br>
-・子どもの様子がおかしい。交友関係・帰宅時の行動を確認したい<br>
-・子どもが１人暮らしを始めた。しばらくの間、素行調査をしたい<br>
-・親族間のトラブルのため、親族の素行調査
-・特定の不審人物の素行調査</p>
+                                <ul class="list">
+                                <li>夫（妻）・恋人が旅行に出かける。<br class="smbr">本当に友達と行くのか確認したい</li>
+                                <li>夫（妻）・恋人の出張先での<br class="smbr">行動を確認したい</li>
+                                <li>夫（妻）・恋人が同窓会に出かける。<br class="smbr">同窓会での様子・その後の行動を確認したい</li>
+                                <li>恋人が最近内緒でバイトを始めたようだ。<br class="smbr">何のバイトをしているか確認したい</li>
+                                <li>恋人がデートを突然キャンセルしてきた。<br class="smbr">何をするのか確認したい</li>
+                                <li>子どもの様子がおかしい。<br class="smbr">交友関係・帰宅時の行動を確認したい</li>
+                                <li>子どもが１人暮らしを始めた。<br class="smbr">しばらくの間、素行調査をしたい</li>
+                                <li>親族間のトラブルのため、親族の素行調査</li>
+                                <li>特定の不審人物の素行調査</li>
+                                </ul>
 
                               </div>
                             </div>
@@ -379,6 +379,19 @@
 
   <!-- Custom js -->
   <script type="text/javascript" src="assets/js/custom.js"></script>
-<script type="text/javascript" src="assets/js/btn.js"></script>
+  <script>
+      $(function(){
+          $("#accordion dt").on("click", function() {
+              $(this).next().slideToggle();
+              $(this).toggleClass("active");
+          });
+      $("#accordion dt").mouseover(function(){
+          $(this).addClass("over");
+      });
+      $("#accordion dt").mouseout(function(){
+          $(this).removeClass("over");
+      });
+      });
+  </script>
   </body>
 </html>
