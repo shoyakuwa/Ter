@@ -9,6 +9,7 @@ Tags: light, white,blog,business,multipurpose,one page, single page, custom-colo
 */
 
 
+
 /* Table of Content
 ==================================================
 #BASIC TYPOGRAPHY
@@ -29,9 +30,154 @@ Tags: light, white,blog,business,multipurpose,one page, single page, custom-colo
 #BLOG PAGE
 #ERROR PAGE
 */
+
+
+
+.base{
+  text-align: center;
+
+}
+
+.including i{
+ font-size: 50px;
+ color: #00d999;
+}
+.basebox2{
+  width: 50%;
+  border: 2px solid black;
+  margin-left: 180px;
+  padding: 20px 30px 20px 30px;
+}
+
+.basebox2 li{
+  padding-bottom: 5px;
+  border-bottom: 1px dashed;
+}
+
+
+
+.keihibox{
+  margin-top: 30px;
+  padding: 20px;
+  border: 2px solid black;
+}
+.basebox{
+  width: 50%;
+  margin-left:180px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+.baseline{
+  border-bottom: 1px dashed black;
+}
+
+.baseline {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#dropmenu {
+  position: relative;
+  list-style-type: none;
+  width: 300px;
+  height: 40px;
+margin-left: -24px;
+  padding: 0;
+  margin-top: -10px;
+  margin-bottom: -10px;
+
+
+}
+#dropmenu li {
+  width: 40%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#dropmenu li a {
+  display: block;
+  margin: 0;
+  padding: 15px 0 11px;
+  color: black;
+  font-size: 14px;
+
+  line-height: 1;
+  text-decoration: none;
+}
+#dropmenu li ul {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 3px 3px;
+}
+#dropmenu li ul li{
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  color: black;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  transition: .2s;
+}
+#dropmenu li ul li a{
+  padding: 13px 15px;
+  background: white;
+  text-align: left;
+  font-size: 12px;
+  font-weight: normal;
+}
+#dropmenu li:hover > a{
+
+  color: #00d999;
+}
+#dropmenu > li:hover > a{
+  border-radius: 3px 3px 0 0;
+}
+#dropmenu li:hover ul li{
+  overflow: visible;
+  height: 38px;
+  border-top: 1px solid #7c8c0e;
+  border-bottom: 1px solid #616d0b;
+}
+#dropmenu li:hover ul li:first-child{
+  border-top: 0;
+}
+#dropmenu li:hover ul li:last-child{
+  border-bottom: 0;
+}
+#dropmenu li:hover ul li:last-child a{
+  border-radius: 0 0 3px 3px;
+}
 .list li{
   list-style-type: disc;
   padding-bottom: 10px;
+  margin-left: 17px;
+}
+
+.list2 li{
+  list-style-type: square;
+  padding-bottom: 10px;
+}
+
+.list3 li{
+  list-style-type: decimal;
+  padding-bottom: 10px;
+}
+
+.access{
+  text-align: center;
+  color: black;
+}
+.access img{
+  margin-bottom: 45px;
 }
 
 .pri h1{
@@ -535,13 +681,13 @@ margin-top: -90px;
     border-color: #ffcc33;
 }
 .color {
-    background-color: #ffcc33;
+
     border-color: #ffcc33;
 }
 .color:focus,
 .color:hover {
     border-color: #333333;
-    background-color: #ffcc33;
+
 }
 /* Blog Section */
 #tf-blog,
@@ -972,13 +1118,14 @@ body {
   font-family:"Roboto Slab" , Garamond , "Times New Roman" , ""游明朝"" , "Yu Mincho" , ""游明朝体"" , "YuMincho" , ""ヒラギノ明朝 Pro W3"" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , ""HGS明朝E"" , ""ＭＳ Ｐ明朝"" , "MS PMincho" , serif;
 	font-size: 16px;
 	overflow-x: hidden !important;
-	color: #656565;
+	color: black;
 }
 ul{
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
+
 a{
 	text-decoration: none;
 	color: #2f2f2f;
@@ -987,7 +1134,7 @@ a:focus{
 	outline: none;
 	text-decoration: none;
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,{
 	font-family:"Roboto Slab" , Garamond , "Times New Roman" , ""游明朝"" , "Yu Mincho" , ""游明朝体"" , "YuMincho" , ""ヒラギノ明朝 Pro W3"" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , ""HGS明朝E"" , ""ＭＳ Ｐ明朝"" , "MS PMincho" , serif;
 }
 h2 {
@@ -1421,6 +1568,8 @@ img{
 	display: inline-block;
 	text-align: center;
 }
+
+
 .wc-table li {
 	float: left;
 	width: 25%;
@@ -1524,7 +1673,7 @@ img{
 	width: 100px;
 }
 .about-right p {
-	color: #535353;
+	color: black;
 	font-family: "Raleway",sans-serif;
 	margin-bottom: 32px;
 }
@@ -1918,7 +2067,7 @@ width: 22.3%;
 	margin-bottom: 30px;
 }
 .single-service p{
-	color: #878787;
+	color: black;
 }
 
 /*--------------------*/
@@ -2175,8 +2324,11 @@ width: 22.3%;
   width: 45%;
 }
 
-.red{
+.red ul{
   color: red;
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-bottom: 10px;
 }
 
 .price-table li:last-child{
@@ -2543,6 +2695,16 @@ background-color: rgb(87, 86, 86);
 	font-size: 35px;
 	margin-bottom: 35px;
 }
+
+.contact-left h3 {
+	color: white;
+  text-align: center;
+}
+
+.contact-left h4 {
+	font-weight: 200;
+}
+
 .single-address {
 	display: inline;
 	float: left;
@@ -2552,10 +2714,34 @@ background-color: rgb(87, 86, 86);
 }
 .single-address h4 {
 	color: #fafafa;
-	font-size: 22px;
-	font-weight: bold;
+	font-size: 19px;
 	margin-bottom: 17px;
 }
+
+.single-address ul {
+  font-weight: 200;
+  list-style-type: square;
+	color: #fafafa;
+	font-size: 17px;
+	margin-bottom: 17px;
+  margin-left:90px;
+}
+
+.todoke{
+  text-align: center;
+}
+
+.ben{
+  margin-left: 90px;
+}
+.number li{
+  list-style: decimal;
+}
+.ceoimg img{
+  width: 35%;
+  height: 250px;
+}
+
 .single-address p {
 	color: #fafafa;
 	font-size: 14px;
@@ -2847,7 +3033,7 @@ pointer-events:none;
   text-decoration: none;
 }
 .single-widget a:hover{
-  color: rgb(218, 119, 109);
+  color: #00d999;
 }
 
 .single-widget h2 {
@@ -3405,6 +3591,9 @@ pointer-events:none;
 	.single-counter {
 	  margin-bottom: 35px;
 	}
+
+
+
 	.single-price .price-amount {
   		font-size: 25px;
 	}
@@ -3532,9 +3721,7 @@ pointer-events:none;
 	  margin-top: 35px;
 	  padding-left: 0;
 	}
-	.title-area {
-	  padding: 0 50px;
-	}
+
 	.call-to-content h2 {
 	  font-size: 28px;
 	}
@@ -3570,11 +3757,89 @@ pointer-events:none;
 .button1{
   margin-left: -20px;
 }
+
+.uuu{
+  margin-bottom: -30px;
+}
+
+.red ul{
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.smtext{
+  font-size: 14px;
+}
+.todoke img{
+  width: 100%;
+}
+.access img{
+width: 100%;
+height:200px;
+}
+
+.basebox2{
+  width: 100%;
+margin-left: 0px;
+}
+
+.keihi li{
+margin-left: 10px;
+}
+
+
+.base{
+  text-align: center;
+}
+
+.basebox{
+  width: 80%;
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+  margin-left: 35px;
+}
+
+.baseline{
+  border-bottom: 1px dashed black;
+}
+
+.baseline {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.single-address ul ,.ben{
+  margin-left: 10px;
+}
+
+.ceoimg img{
+width: 100%;
+height: 250px;
+}
+
+
+.features{
+  margin-left: 193px;
+  width: 60%;
+}
+
+.tab-content{
+  width: 80%;
+  margin-left: 155px;
+}
+
 .vline{
   display: none;
 }
 .ri2{
-  margin-top: 50px;
+  margin-top: 20px;
+}
+
+.ri4{
+  margin-top: 10px;
 }
 
 .ri{
@@ -3623,10 +3888,29 @@ padding-top: 100px;
 padding: 0 20px 0 20px;
 }
 
-.title-area{
+.pcbr{
+  display: none;
+}
+
+.title-area1{
   margin-top: -90px;
   margin-bottom: 30px;
-  margin-left: 10px;
+  margin-left: 0px;
+    border: 2px solid #00d999;
+}
+
+.title-area{
+  margin-left: 0px;
+  margin-top: -30px;
+    border: 2px solid #00d999;
+
+}
+
+.title-area1 p{
+  padding: 10px;
+}
+
+.title-area p{
 }
 
 .list li{
@@ -3793,6 +4077,25 @@ overflow: hidden;
 	.contact-left {
 	  margin-bottom: 30px;
 	}
+
+  .contact-left {
+  padding: 0;
+	}
+
+.contact-left h3{
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.contact-left{
+  fonr
+}
+
+.single-address{
+  padding: 0;
+}
+
 	#blog-banner {
 	  margin-top: -60px;
 	}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>お問い合わせ</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/google-map.css">
+    <link rel="stylesheet" href="css/mailform.css">
+    <script src="js/jquery.js"></script>
+      <script src=”https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWfFNimpLz9kCfgCqk5lCTG51nvk0RFs“></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script><!--[if lt IE 9]>
+    <html class="lt-ie9">
+      <div style="clear: both; text-align:center; position: relative;"><a href="http://windows.microsoft.com/en-US/internet-explorer/.."><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    </html>
+    <script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/device.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <!--
+      ========================================================
+      							HEADER
+      ========================================================
+
+
+      -->
+      <header>
+        <div class="container">
+          <div class="brand">
+            <h1 class="brand_name"><a href="../index.html">株式会社TeR</a></h1>
+            <p class="brand_slogan">for 横須賀</p>
+          </div><a href="callto:#" class="fa-phone">03-5731-0054</a>
+          <p>お気軽にお問い合わせください</p>
+        </div>
+        <div id="stuck_container" class="stuck_container">
+          <div class="container">
+            <nav class="nav">
+              <ul data-type="navbar" class="sf-menu">
+                <li class="active"><a href="index.html">Home</a>
+                </li>
+                <li><a href="index-2.html">各調査項目</a>
+                  <ul>
+                    <li><a href="../content/uwaki.html">浮気調査</a></li>
+                    <li><a href="../content/yukue.html">行動調査・監視</a></li>
+                    <li><a href="../content/iede.html">家出・行方不明人捜査
+                    <li><a href="../content/st.html">ストーカー対策</a></li>
+                    <li><a href="../content/ijime.html">いじめ問題調査・解決</a></li>
+                    <li><a href="../content/internet.html">インターネット<br>関連調査</a></li>
+                    <li><a href="../content/marriage.html">結婚前調査</a></li>
+                    <li><a href="../content/sagi.html">詐欺問題調査</a></li>
+                    <li><a href="../content/toucho.html">盗聴・盗撮調査</a></li>
+                    <li><a href="../content/itazura.html">防犯対策・いたずら・いやがらせ調査</a></li>
+                  </ul>
+                </li>
+                <li><a href="index-1.html">株式会社TeR</a>
+                </li>
+                <li><a href="../content/question.html">よくあるご質問</a>
+                </li>
+                <li><a href="index-1.html">探偵が見た横須賀市</a>
+                </li>
+                <li><a href="index-4.html">お問い合わせ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!--
+      ========================================================
+                                  CONTENT
+      ========================================================
+      -->
+      <main>
+        <section class="map">
+          <div id="google-map" class="map_model"></div>
+          <ul class="map_locations">
+            <li data-x="35.609763" data-y="139.670099">
+              <p>株式会社TeR<span>03-5731-0054</span></p>
+            </li>
+          </ul>
+        </section>
+        <section class="well1">
+          <div class="container">
+            <center><h2>お問い合わせ</h2></center>
+            <form method="post" action="bat/rd-mailform.php" class="mailform off2">
+              <input type="hidden" name="form-type" value="contact">
+              <fieldset class="row">
+                <label class="grid_4">
+                  <input type="text" name="name" placeholder="お名前:" data-constraints="@LettersOnly @NotEmpty">
+                </label>
+                <label class="grid_4">
+                  <input type="text" name="phone" placeholder="連絡先:" data-constraints="@Phone">
+                </label>
+                <label class="grid_4">
+                  <input type="text" name="email" placeholder="メールアドレス:" data-constraints="@Email @NotEmpty">
+                </label>
+                <label class="grid_12">
+                  <textarea name="message" placeholder="本文:" data-constraints="@NotEmpty"></textarea>
+                </label>
+                <div class="mfControls grid_12">
+                  <button type="submit" class="btn">送信</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <section class="well3 bg-secondary">
+          <div class="container">
+            <ul class="row contact-list">
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-map-marker"></div>
+                  </div>
+                  <div class="box_cnt__no-flow">
+                    <address>〒152-0035<br>
+                      東京都目黒区自由が丘１－１４－２</br>
+                      サンアップ自由が丘２０２</address>
+                  </div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-envelope"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="mailto:#">info@ter-tantei.cp.jp</a></div>
+                </div>
+              </li>
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-phone"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="callto:#">TEL : 03-5731-0054</a></div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-fax"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="callto:#">FAX : 03-5731-0064</a></div>
+                </div>
+              </li>
+              <li class="grid_4">
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-facebook"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="#">facebook</a></div>
+                </div>
+                <div class="box">
+                  <div class="box_aside">
+                    <div class="icon2 fa-twitter"></div>
+                  </div>
+                  <div class="box_cnt__no-flow"><a href="#">公式ホームページ</a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+      <!--
+      ========================================================
+                                  FOOTER
+      ========================================================
+      -->
+      <footer>
+        <section>
+          <div class="container">
+            <div class="copyright">株式会社TeR © All Right Reserved<span id="copyright-year"></span>.&nbsp;&nbsp;<a href="index-5.html">プライバシーポリシ－</a>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
